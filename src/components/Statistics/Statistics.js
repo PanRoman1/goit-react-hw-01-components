@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 
 import {
@@ -16,14 +15,15 @@ export const Statistics = ({ title, stats }) => {
       {title && <Title>{title}</Title>}
       <DataList>
         {stats.map(({ id, label, percentage }) => (
-        <DataItem key={id}> 
-        <Label>{label}</Label>
-          <Percentage>{percentage}%</Percentage>        
-      </DataItem>
-    ))}
-      </DataList>      
-    </Section>)
-}
+          <DataItem key={id}>
+            <Label>{label}</Label>
+            <Percentage>{percentage}%</Percentage>
+          </DataItem>
+        ))}
+      </DataList>
+    </Section>
+  );
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,
@@ -34,4 +34,4 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
-}
+};

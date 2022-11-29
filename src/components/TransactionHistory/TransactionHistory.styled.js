@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Table = styled.table`
   margin-left: auto;
@@ -15,7 +15,7 @@ export const Table = styled.table`
   }
   th {
     width: 33.33%;
-    border: 1px solid #e7fefc;    
+    border: 1px solid #e7fefc;
   }
 `;
 

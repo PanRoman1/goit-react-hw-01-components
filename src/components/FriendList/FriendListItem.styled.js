@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Friend = styled.li`
   display: flex;
@@ -12,11 +12,11 @@ export const Friend = styled.li`
 `;
 
 export const Label = styled.span`
-width: 15px;
-height: 15px;
-margin-right: 15px;
-border-radius: 50%;
-  background-color: ${props => props.bgColor};  
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: ${props => props.bgColor};
 `;
 
 export const AvatarImg = styled.img`
